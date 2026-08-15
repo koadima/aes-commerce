@@ -361,6 +361,30 @@ h1, h2, h3 {
 .rule-card h3 { font-size: 1.05rem; margin-bottom: 0.4em; }
 .rule-card p { color: var(--ink-soft); margin: 0; font-size: 0.95rem; }
 
+/* ---------- Galerie ---------- */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery-photo {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  aspect-ratio: 4 / 5;
+}
+
+.gallery-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* ---------- Events ---------- */
 
 .events-list {
