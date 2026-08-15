@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Table de Silgat — Club de Belote de Comsylga</title>
+  <meta name="description" content="La Table de Silgat, le club de belote de la ville et de la commune de Comsylga. Fonctionnaires, habitants et nouveaux joueurs sont les bienvenus.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="40" height="40">
+            <rect x="1" y="1" width="46" height="46" rx="8" fill="#0b3d2e" stroke="#c9a227" stroke-width="2"/>
+            <text x="24" y="30" text-anchor="middle" font-family="Playfair Display, serif" font-weight="700" font-size="20" fill="#e0c368">S</text>
+            <text x="12" y="16" text-anchor="middle" font-size="10" fill="#c9a227">♠</text>
+            <text x="36" y="40" text-anchor="middle" font-size="10" fill="#b5322f">♥</text>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">La Table de Silgat</span>
+          <span class="brand-sub">Club de Belote de Comsylga</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="#apropos">Qui sommes-nous</a>
+        <a href="#rejoindre">Rejoindre</a>
+        <a href="#apprendre">Apprendre la belote</a>
+        <a href="#evenements">Événements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow">♠ ♥ ♦ ♣ &nbsp;Ville de Comsylga</p>
+        <h1>La Table de Silgat</h1>
+        <p class="hero-lead">
+          Le rendez-vous des amoureux de la belote à Comsylga : fonctionnaires en poste,
+          habitants de la commune, et toute personne curieuse d'apprendre à jouer.
+        </p>
+        <div class="hero-actions">
+          <a href="#rejoindre" class="btn btn-primary">Rejoindre la table</a>
+          <a href="#apprendre" class="btn btn-ghost">Apprendre à jouer</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- A PROPOS -->
+    <section id="apropos" class="section">
+      <div class="container">
+        <p class="section-kicker">Qui sommes-nous</p>
+        <h2 class="section-title">Une table ouverte à tout Comsylga</h2>
+        <p class="section-intro">
+          La Table de Silgat est née dans la ville de Comsylga, autour des fonctionnaires
+          et des agents en fonction dans la commune. Elle s'est depuis ouverte à tous les
+          habitants de la commune, puis à toute personne, d'où qu'elle vienne, qui souhaite
+          apprendre et partager le plaisir de la belote.
+        </p>
+
+        <div class="audience-grid">
+          <article class="audience-card">
+            <span class="audience-suit" aria-hidden="true">♠</span>
+            <h3>Fonctionnaires &amp; agents</h3>
+            <p>En poste dans la ville et la commune de Comsylga — le cercle fondateur de la table.</p>
+          </article>
+          <article class="audience-card">
+            <span class="audience-suit" aria-hidden="true">♥</span>
+            <h3>Habitants de la commune</h3>
+            <p>Tous les habitants de la commune de Comsylga sont les bienvenus autour de la table.</p>
+          </article>
+          <article class="audience-card">
+            <span class="audience-suit" aria-hidden="true">♦</span>
+            <h3>Nouveaux joueurs</h3>
+            <p>Débutants ou curieux venus d'ailleurs : chacun peut apprendre la belote avec nous.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REJOINDRE -->
+    <section id="rejoindre" class="section section-alt">
+      <div class="container">
+        <p class="section-kicker">Rejoindre</p>
+        <h2 class="section-title">Comment nous rejoindre</h2>
+        <p class="section-intro">
+          L'adhésion à la Table de Silgat est simple et ouverte à tous les profils
+          présentés ci-dessus. Remplissez le formulaire ci-dessous, ou contactez-nous
+          directement, et nous reviendrons vers vous pour vous accueillir à la prochaine partie.
+        </p>
+
+        <form class="join-form" id="joinForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="nom">Nom complet</label>
+              <input type="text" id="nom" name="nom" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="telephone">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" required autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="profil">Vous êtes</label>
+              <select id="profil" name="profil" required>
+                <option value="">Choisissez une option</option>
+                <option value="fonctionnaire">Fonctionnaire / agent de Comsylga</option>
+                <option value="habitant">Habitant de la commune de Comsylga</option>
+                <option value="debutant">Nouveau joueur souhaitant apprendre</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message (facultatif)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Un mot sur votre niveau, vos disponibilités..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- APPRENDRE -->
+    <section id="apprendre" class="section">
+      <div class="container">
+        <p class="section-kicker">Apprendre la belote</p>
+        <h2 class="section-title">Les bases du jeu</h2>
+        <p class="section-intro">
+          Jamais joué à la belote ? Pas de souci : à la Table de Silgat, chaque nouveau
+          venu est accompagné par des joueurs expérimentés le temps de comprendre les règles.
+        </p>
+
+        <div class="rules-grid">
+          <div class="rule-card">
+            <span class="rule-number">1</span>
+            <h3>4 joueurs, 2 équipes</h3>
+            <p>La belote se joue à quatre, en équipes de deux, assis face à face autour de la table.</p>
+          </div>
+          <div class="rule-card">
+            <span class="rule-number">2</span>
+            <h3>32 cartes</h3>
+            <p>On joue avec un jeu de 32 cartes (du 7 à l'as), distribuées à chaque joueur.</p>
+          </div>
+          <div class="rule-card">
+            <span class="rule-number">3</span>
+            <h3>Une couleur d'atout</h3>
+            <p>Une couleur est choisie comme atout et prend le pas sur les trois autres couleurs.</p>
+          </div>
+          <div class="rule-card">
+            <span class="rule-number">4</span>
+            <h3>Belote et rebelote</h3>
+            <p>Le roi et la dame d'atout dans la même main valent des points bonus : la fameuse "belote-rebelote".</p>
+          </div>
+          <div class="rule-card">
+            <span class="rule-number">5</span>
+            <h3>Objectif : 501 ou 1000 points</h3>
+            <p>Les équipes cumulent leurs points, partie après partie, jusqu'au score fixé pour gagner.</p>
+          </div>
+          <div class="rule-card">
+            <span class="rule-number">6</span>
+            <h3>On progresse ensemble</h3>
+            <p>Des séances d'initiation sont organisées régulièrement pour les nouveaux joueurs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENEMENTS -->
+    <section id="evenements" class="section section-alt">
+      <div class="container">
+        <p class="section-kicker">Événements</p>
+        <h2 class="section-title">Nos rendez-vous</h2>
+        <p class="section-intro">
+          Les horaires ci-dessous sont indicatifs — à ajuster selon le calendrier réel de la table.
+        </p>
+
+        <div class="events-list">
+          <div class="event-item">
+            <div class="event-date">
+              <span class="event-day">Chaque semaine</span>
+              <span class="event-time">Vendredi, 18h00</span>
+            </div>
+            <div class="event-body">
+              <h3>Soirée belote hebdomadaire</h3>
+              <p>Le rendez-vous régulier de la Table de Silgat, ouvert à tous les membres.</p>
+            </div>
+          </div>
+          <div class="event-item">
+            <div class="event-date">
+              <span class="event-day">Chaque mois</span>
+              <span class="event-time">1er samedi, 15h00</span>
+            </div>
+            <div class="event-body">
+              <h3>Séance d'initiation</h3>
+              <p>Pour les nouveaux joueurs qui souhaitent apprendre les règles pas à pas.</p>
+            </div>
+          </div>
+          <div class="event-item">
+            <div class="event-date">
+              <span class="event-day">Occasionnel</span>
+              <span class="event-time">Date à annoncer</span>
+            </div>
+            <div class="event-body">
+              <h3>Tournoi de la commune</h3>
+              <p>Un tournoi ouvert à tout Comsylga, fonctionnaires, habitants et invités.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2 class="section-title">Nous écrire</h2>
+          <p class="section-intro">
+            Une question avant de nous rejoindre ? Contactez la Table de Silgat directement.
+          </p>
+          <ul class="contact-list">
+            <li><strong>Adresse :</strong> Ville de Comsylga, Commune de Comsylga</li>
+            <li><strong>Téléphone :</strong> <a href="tel:+000000000">à compléter</a></li>
+            <li><strong>E-mail :</strong> <a href="mailto:contact@latabledesilgat.example">contact@latabledesilgat.example</a></li>
+          </ul>
+        </div>
+        <div class="contact-card">
+          <p>« Autour de cette table, chacun a sa place : fonctionnaire, habitant de la
+          commune, ou simple curieux venu apprendre la belote. »</p>
+          <p class="contact-signature">— La Table de Silgat</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> La Table de Silgat — Club de belote de la commune de Comsylga.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
