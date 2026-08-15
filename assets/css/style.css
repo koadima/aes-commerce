@@ -363,27 +363,26 @@ h1, h2, h3 {
 
 /* ---------- Galerie ---------- */
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
 .gallery-photo {
   margin: 0;
-  max-width: 900px;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
+  aspect-ratio: 4 / 5;
 }
 
 .gallery-photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
-}
-
-.gallery-photo figcaption {
-  padding: 14px 20px;
-  background: var(--paper);
-  color: var(--ink-soft);
-  font-size: 0.9rem;
-  font-style: italic;
 }
 
 /* ---------- Events ---------- */
